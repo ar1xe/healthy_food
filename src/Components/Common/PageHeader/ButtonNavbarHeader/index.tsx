@@ -2,11 +2,11 @@ import React, { FC } from "react";
 import { BtnHeader } from "./modelBtn";
 import style from "../ButtonNavbarHeader/buttonNavbarHeader.module.scss";
 
-interface ButtonNavbarHeaderProps {
+/* interface ButtonNavbarHeaderProps {
   item: BtnHeader;
   activeId: string;
   clickHandle: (id: string) => void;
-}
+} */
 
 const ButtonNavbarHeader: FC<BtnHeader> = ({ id, title }) => {
   return (
