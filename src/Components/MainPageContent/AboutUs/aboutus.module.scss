@@ -1,0 +1,73 @@
+.about_us__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.about_us__container{
+    width: 1287px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.about_us__content{
+    width: 487px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    margin-left: 100px;
+
+    span{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #DC780B;
+        opacity: 0.7;
+    }
+    h3{
+        font-family: 'Philosopher', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 31.25px;
+        line-height: 41px;
+        color: #150C01;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #150C01;
+        opacity: 0.7;
+        margin-top: 30px;
+    }
+}
+.about_us_content__btn{
+    width: 142px;
+    height: 42px; 
+    border: none;
+    background: #DC780B;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.about_us__logo{
+    width: 560px;
+    height: 505px;
+}
