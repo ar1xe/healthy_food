@@ -6,6 +6,7 @@ import AdUnit from "./AdUnit";
 import Features from "./Features";
 import Menu from "./Menu";
 import TakeAway from "./TakeAway";
+import Testimonail from "./Testimonial";
 
 const MainPageContent: FC = () => {
   return (
@@ -16,6 +17,7 @@ const MainPageContent: FC = () => {
       <AboutUs />
       <Menu />
       <TakeAway />
+      <Testimonail />
       <PageFooter />
     </>
   );
