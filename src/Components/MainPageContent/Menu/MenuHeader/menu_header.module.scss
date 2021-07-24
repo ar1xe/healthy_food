@@ -1,0 +1,48 @@
+.menu_header__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.menu_header__container{
+    /* width: 1287px; */
+    width: 748px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #DC780B;
+            opacity: 0.7;
+        }
+
+        h3{
+            font-family: 'Philosopher', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 31.25px;
+            line-height: 24px;
+            color: #150C01;
+            margin: 10px;
+        }
+
+        p{
+            font-family: 'Philosopher', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #150C01;
+            opacity: 0.7;
+            text-align: center;
+            margin: 25px;
+        }
+}

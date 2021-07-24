@@ -4,6 +4,7 @@ import PageHeader from "../Common/PageHeader";
 import AboutUs from "./AboutUs";
 import AdUnit from "./AdUnit";
 import Features from "./Features";
+import Menu from "./Menu";
 
 const MainPageContent: FC = () => {
   return (
@@ -12,6 +13,7 @@ const MainPageContent: FC = () => {
       <AdUnit />
       <Features />
       <AboutUs />
+      <Menu />
       <PageFooter />
     </>
   );
