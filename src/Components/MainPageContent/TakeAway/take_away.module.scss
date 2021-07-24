@@ -1,0 +1,84 @@
+.take_away__wrapper{
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.take_away__container{
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;   
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;                    
+            color: #DC780B;                    
+            opacity: 0.7;
+        }
+
+        h3{
+            font-family: 'Philosopher', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 31.25px;
+            line-height: 41px;
+            color: #150C01;
+        }
+
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;                   
+            color: #150C01;                    
+            opacity: 0.7;
+        }
+}
+
+.take_away__description{
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.take_away__btns{
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    
+        button{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            font-family: 'Roboto', sans-serif;
+            width: 180px;
+            height: 60px;
+            cursor: pointer;
+        }
+}
+
+.take_away_btns__app{
+    font-family: 'Roboto', sans-serif;
+    background: #150C01;
+    border-radius: 5px;
+    color: #FFFF;
+}
+
+.take_away_btns__google{
+    background: #ffffff;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}

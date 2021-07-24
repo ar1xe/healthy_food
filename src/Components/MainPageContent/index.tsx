@@ -5,6 +5,7 @@ import AboutUs from "./AboutUs";
 import AdUnit from "./AdUnit";
 import Features from "./Features";
 import Menu from "./Menu";
+import TakeAway from "./TakeAway";
 
 const MainPageContent: FC = () => {
   return (
@@ -14,6 +15,7 @@ const MainPageContent: FC = () => {
       <Features />
       <AboutUs />
       <Menu />
+      <TakeAway />
       <PageFooter />
     </>
   );
