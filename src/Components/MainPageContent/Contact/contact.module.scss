@@ -1,0 +1,68 @@
+.contact__wrapper{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    background-color: #FDF2E8;
+}
+
+.contact__container{
+    width: 1440px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;      
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #DC780B;
+            opacity: 0.7;
+        }
+
+        h3{            
+            font-family: 'Philosopher', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 31.25px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }   
+}
+
+.contact__input{
+    margin-top: 50px;
+
+    input{
+        width: 550px;
+        height: 75px;
+        border: none;
+        border-radius: 15px 0 0 15px;
+        padding-left: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        opacity: 0.5;
+
+    }
+
+    button{
+        width: 150px;
+        height: 75px;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        background: #DC780B;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;        
+    }
+}
