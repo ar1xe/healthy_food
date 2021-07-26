@@ -50,9 +50,12 @@
 }
 
 .page_adunit__btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 170px;
-    height: 60px;
-    /* opacity: 0.1; */
+    height: 60px;    
     border: 1.5px solid #DC780B;
     box-sizing: border-box;
     border-radius: 5px;
@@ -70,7 +73,7 @@
     font-size: 35px;
     background-color:rgb(255, 255, 255);
     border: 2px solid #DC780B;
-    border-radius: 35px 15px 10px 0;
+    border-radius: 35px 15px 35px 0;
     width: 450px;
     height: 250px;    
 }

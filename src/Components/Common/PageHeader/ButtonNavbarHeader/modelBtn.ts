@@ -1,19 +1,23 @@
 export const buttonsHeader = [
     {
         id: "1",
-        title: "Home"
+        title: "Home",
+        url: "/mainPage"
     },
     {
         id: "2",
-        title: "About us"
+        title: "About us",
+        url: "/aboutUs"
     },
     {
         id: "3",
-        title: "Contact us"
+        title: "Contact us",
+        url: "/contactUs"
     },
 ]
 
 export interface BtnHeader {
     readonly id?: string;
     readonly title?: string;
+    readonly url?: string;
 }

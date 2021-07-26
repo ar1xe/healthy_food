@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { BtnHeader } from "./modelBtn";
 import style from "../ButtonNavbarHeader/buttonNavbarHeader.module.scss";
+import Link from "next/link";
 
 export interface ButtonNavbarHeaderProps {
   item: BtnHeader;
@@ -17,15 +18,18 @@ const ButtonNavbarHeader: FC<ButtonNavbarHeaderProps> = ({
     clickHandle(item.id);
   };
   return (
-    <button
-      type="button"
-      className={`${style.page_header__navigation__item} ${
-        activeId === item.id ? style.__isActive : ""
-      }`}
-      onClick={onPress}
-    >
-      {item.title}
-    </button>
+    <Link href={item.url}>
+      <a
+        type="button"
+        className={`${style.page_header__navigation__item} ${
+          activeId === item.id ? style.__isActive : ""
+        }`}
+        onClick={onPress}
+        href={item.url}
+      >
+        {item.title}
+      </a>
+    </Link>
   );
 };
 

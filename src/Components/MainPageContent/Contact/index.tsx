@@ -1,7 +1,18 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import style from "../Contact/contact.module.scss";
 
 const Contact: FC = () => {
+  const [message, setMessage] = useState<string>("");
+
+  const onChangeMessage = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMessage(event.target.value);
+  };
+
+  const onSendMessage = () => {
+    prompt(message, "точно отправить?");
+    setMessage("");
+  };
+
   return (
     <div className={style.contact__wrapper}>
       <div className={style.contact__container}>
@@ -11,8 +22,15 @@ const Contact: FC = () => {
           manage.
         </h3>
         <div className={style.contact__input}>
-          <input type="text" placeholder="Enter your message" />
-          <button type="button">Send</button>
+          <input
+            type="text"
+            placeholder="Enter your message"
+            value={message}
+            onChange={onChangeMessage}
+          />
+          <button type="button" onClick={onSendMessage}>
+            Send
+          </button>
         </div>
       </div>
     </div>

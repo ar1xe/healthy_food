@@ -37,7 +37,14 @@
 }
 
 .menu_item__logo{
-    border-radius: 75px 15px 75px 0;
+    border-radius: 75px 15px 75px 0;   
+    cursor: pointer; 
+}
+
+.menu_item__logo:hover{
+    transform: rotate(-15deg) scale(1.2); 
+    transition-duration: 1.5s;
+    
 }
 
 .menu_item__description{
