@@ -2,6 +2,8 @@ import React, { FC } from "react";
 import Image from "next/image";
 import startLogo from "../../../../public/startLogo.svg";
 import style from "../AdUnit/adunit.module.scss";
+import Popup from "reactjs-popup";
+/* import "reactjs-popup/dist/index.css"; */
 
 const AdUnit: FC = () => {
   return (
@@ -19,9 +21,32 @@ const AdUnit: FC = () => {
             </span>
           </div>
           <div className={style.page_adunit__btns_container}>
-            <button type="button" className={style.page_adunit__btns}>
+            <Popup
+              trigger={
+                <button type="button" className={style.page_adunit__btns}>
+                  Order Now
+                </button>
+              }
+              modal
+              nested
+            >
+              {(close) => (
+                <div className={style.modal}>
+                  <button className={style.close} onClick={close}>
+                    &times;
+                  </button>
+                  <div className={style.header}>About order</div>
+                  <div className={style.content}>
+                    <input type="text" placeholder="Your name" />
+                    <input type="text" placeholder="Your phone number" />
+                    <button type="button">Submit</button>
+                  </div>
+                </div>
+              )}
+            </Popup>
+            {/* <button type="button" className={style.page_adunit__btns}>
               Order Now
-            </button>
+            </button> */}
             <button type="button" className={style.page_adunit__btns}>
               Food Details
             </button>
