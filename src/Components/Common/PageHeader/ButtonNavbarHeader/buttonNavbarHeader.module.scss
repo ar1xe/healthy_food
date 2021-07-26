@@ -15,4 +15,8 @@
     cursor: pointer;
     border: none;
     background-color: #FFFFFF;
+
+        &.__isActive {
+            color: #DC780B;
+        }
 }

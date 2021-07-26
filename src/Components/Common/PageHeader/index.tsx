@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import style from "../PageHeader/header.module.scss";
 import Image from "next/image";
 import logo from "../../../../public/logo.png";
@@ -6,6 +6,11 @@ import { BtnHeader, buttonsHeader } from "./ButtonNavbarHeader/modelBtn";
 import ButtonNavbarHeader from "./ButtonNavbarHeader";
 
 const PageHeader: FC<BtnHeader> = () => {
+  const [activeId, setActiveId] = useState<string>("1");
+  const clickHandle = (id: string) => {
+    setActiveId(id);
+  };
+
   return (
     <div className={style.page_header__wrapper}>
       <div className={style.page_header__container}>
@@ -14,14 +19,13 @@ const PageHeader: FC<BtnHeader> = () => {
         </div>
         <div className={style.page_header__navigation}>
           {buttonsHeader.map((elem: BtnHeader) => (
-            <ButtonNavbarHeader key={elem.id} title={elem.title} />
+            <ButtonNavbarHeader
+              key={elem.id}
+              item={elem}
+              activeId={activeId}
+              clickHandle={clickHandle}
+            />
           ))}
-
-          {/* <span className={style.page_header__navigation__item}>Home</span>
-          <span className={style.page_header__navigation__item}>About us</span>
-          <span className={style.page_header__navigation__item}>
-            Contact us
-          </span> */}
         </div>
         <div>
           <button type="button" className={style.page_header__navigation__btn}>
