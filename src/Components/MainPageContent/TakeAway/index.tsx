@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import style from "../TakeAway/take_away.module.scss";
 import Image from "next/image";
 import phone from "../TakeAway/img/phone.png";
+import Link from "next/link";
 
 const TakeAway: FC = () => {
   return (
@@ -19,12 +20,16 @@ const TakeAway: FC = () => {
             </p>
           </div>
           <div className={style.take_away__btns}>
-            <button type="button" className={style.take_away_btns__app}>
-              App Store
-            </button>
-            <button type="button" className={style.take_away_btns__google}>
-              Google Play
-            </button>
+            <Link href="https://apps.apple.com/ru/app/%D0%B4%D0%BE%D0%BC/id1110145103">
+              <a type="button" className={style.take_away_btns__app}>
+                App Store
+              </a>
+            </Link>
+            <Link href="https://play.google.com/store/apps/details?id=com.nordcurrent.canteenhd">
+              <a type="button" className={style.take_away_btns__google}>
+                Google Play
+              </a>
+            </Link>
           </div>
         </div>
 
