@@ -2,6 +2,10 @@ import React, { FC } from "react";
 import style from "../Testimonial/testimonial.module.scss";
 import Image from "next/image";
 import face from "../Testimonial/img/face.png";
+import face1 from "../Testimonial/img/face1.png";
+import face2 from "../Testimonial/img/face2.png";
+import face3 from "../Testimonial/img/face3.png";
+import face4 from "../Testimonial/img/face4.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -86,10 +90,10 @@ const Testimonail: FC = () => {
         >
           <div className={style.carousel__item}>
             <Image
-              src={face}
+              src={face4}
               alt="alt face"
-              width={60}
-              height={60}
+              width={100}
+              height={150}
               className={style.testimonial__logo}
             />
             <p>
@@ -102,10 +106,10 @@ const Testimonail: FC = () => {
           </div>
           <div className={style.carousel__item}>
             <Image
-              src={face}
+              src={face1}
               alt="alt face"
-              width={60}
-              height={60}
+              width={125}
+              height={150}
               className={style.testimonial__logo}
             />
             <p>
@@ -113,15 +117,15 @@ const Testimonail: FC = () => {
               specialized equipment, Skills to manage Customers, Effective
               Product catlogues etc very successful to make your.
             </p>
-            <h4>Augusta W. Reynoso</h4>
-            <span>UI & UX DeSIGNER</span>
+            <h4>Lilia Swonson</h4>
+            <span>ATTRACTION MANAGER</span>
           </div>
           <div className={style.carousel__item}>
             <Image
-              src={face}
+              src={face2}
               alt="alt face"
-              width={60}
-              height={60}
+              width={100}
+              height={150}
               className={style.testimonial__logo}
             />
             <p>
@@ -129,15 +133,15 @@ const Testimonail: FC = () => {
               specialized equipment, Skills to manage Customers, Effective
               Product catlogues etc very successful to make your.
             </p>
-            <h4>Augusta W. Reynoso</h4>
-            <span>UI & UX DeSIGNER</span>
+            <h4>IVAN KUCHAEV</h4>
+            <span>FULL STACK DEVELOPER</span>
           </div>
           <div className={style.carousel__item}>
             <Image
-              src={face}
+              src={face3}
               alt="alt face"
-              width={60}
-              height={60}
+              width={140}
+              height={150}
               className={style.testimonial__logo}
             />
             <p>
@@ -145,8 +149,8 @@ const Testimonail: FC = () => {
               specialized equipment, Skills to manage Customers, Effective
               Product catlogues etc very successful to make your.
             </p>
-            <h4>Augusta W. Reynoso</h4>
-            <span>UI & UX DeSIGNER</span>
+            <h4>BRED PITT</h4>
+            <span>GENERAL DIRECTOR</span>
           </div>
         </Carousel>
       </div>
