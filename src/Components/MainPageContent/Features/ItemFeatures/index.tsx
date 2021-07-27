@@ -11,7 +11,13 @@ const ItemsFeaturesComponent: FC<ItemFeatures> = ({
 }) => {
   return (
     <div className={style.item_features__container}>
-      <Image src={src} alt="logo" width={65} height={65} />
+      <Image
+        src={src}
+        alt="logo"
+        width={65}
+        height={65}
+        className={style.item_features__logo}
+      />
       <h3>{title}</h3>
       <span>{description}</span>
     </div>

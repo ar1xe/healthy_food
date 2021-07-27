@@ -26,3 +26,12 @@
             font-family: 'Roboto', sans-serif;
         }
 }
+
+.item_features__logo{
+    border-radius: 40px;
+}
+
+.item_features__logo:hover{
+    transform: rotate(360deg) scale(1.0); 
+    transition-duration: 2.5s;
+}

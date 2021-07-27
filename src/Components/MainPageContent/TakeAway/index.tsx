@@ -34,7 +34,7 @@ const TakeAway: FC = () => {
         </div>
 
         <div>
-          <Image src={phone} alt="phone" />
+          <Image src={phone} alt="phone" className={style.take_away__logo} />
         </div>
       </div>
     </div>

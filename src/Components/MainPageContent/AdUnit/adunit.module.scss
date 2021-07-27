@@ -9,8 +9,7 @@
     justify-content: space-between;
     width: 1287px;
     height: 680px;
-    /* height: 100%; */
-    /* margin-top: 160px; */
+    
 }
 
 .page_adunit__heading{
@@ -26,9 +25,12 @@
 .page_adunit__logo{
     display: flex;
     justify-content: flex-end;
-    /* margin-left: 100px; */
-    /* width: 90%;
-    height: 90%; */
+    
+}
+
+.page_adunit__logo:hover{
+    transform: rotate(10deg) scale(1.0); 
+    transition-duration: 2.5s;
 }
 
 .page_adunit__description{

@@ -9,7 +9,7 @@ const Contact: FC = () => {
   };
 
   const onSendMessage = () => {
-    prompt(message, "точно отправить?");
+    prompt(message, "confirmation of message sending?");
     setMessage("");
   };
 
