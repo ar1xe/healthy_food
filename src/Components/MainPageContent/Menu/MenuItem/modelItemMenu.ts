@@ -50,7 +50,7 @@ export const menuItem = [
     },    
 ]
 
-export interface MenuItemsBar {
+export interface MenuItemI {
     readonly id?: string;
     readonly src?: any;
     readonly title?: string;

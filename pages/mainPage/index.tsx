@@ -4,7 +4,7 @@ import MainPageContent from "../../src/Components/MainPageContent";
 const MainPage = () => {
   return (
     <>
-      <CustomHead title="Foot Network" description="Foot Network" />
+      <CustomHead title="Home" description="Foot Network" />
 
       <MainPageContent />
     </>

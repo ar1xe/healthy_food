@@ -25,7 +25,7 @@ const initlState: ContactState = {
 }) */
 
 
-// Define a type for the slice state
+/* // Define a type for the slice state
 interface CounterState {
     value: number
   }
@@ -58,4 +58,4 @@ interface CounterState {
   // Other code such as selectors can use the imported `RootState` type
   export const selectCount = (state: RootState) => state.counter.value
   
-  export default counterSlice.reducer
+  export default counterSlice.reducer */

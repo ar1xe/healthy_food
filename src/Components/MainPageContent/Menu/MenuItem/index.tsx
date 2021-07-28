@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import { MenuItemsBar } from "./modelItemMenu";
+import { MenuItemI } from "./modelItemMenu";
 import Image from "next/image";
 import style from "../MenuItem/menu_item.module.scss";
 
-const MenuItem: FC<MenuItemsBar> = ({ id, src, title, price, description }) => {
+const MenuItem: FC<MenuItemI> = ({ id, src, title, price, description }) => {
   return (
     <div className={style.menu_item__wrapper}>
       <div className={style.menu_item__container}>

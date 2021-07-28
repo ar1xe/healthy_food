@@ -1,4 +1,4 @@
-import { store } from "../src/store/store";
+import { store } from "../src/redux/store";
 import { Provider } from "react-redux";
 import "../styles/globals.css";
 

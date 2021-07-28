@@ -10,7 +10,7 @@ const AboutUsContent: FC = () => {
     <>
       <PageHeader />
       <div className={style.about_us__header}>
-        <h1 className={style.about_us__header}>ABOUT OUR RESTAURANT</h1>
+        <h1>ABOUT OUR RESTAURANT</h1>
       </div>
       <div className={style.about_us__wrapper}>
         <div className={style.about_us__container}>

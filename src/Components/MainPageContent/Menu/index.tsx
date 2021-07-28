@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import MenuHeader from "./MenuHeader";
 import MenuItem from "./MenuItem";
-import { menuItem, MenuItemsBar } from "./MenuItem/modelItemMenu";
+import { menuItem, MenuItemI } from "./MenuItem/modelItemMenu";
 import style from "../Menu/menu.module.scss";
 
 const Menu: FC = () => {
@@ -12,7 +12,7 @@ const Menu: FC = () => {
       </div>
       <div className={style.page_menu__wrapper}>
         <div className={style.page_menu__container}>
-          {menuItem.map((elem: MenuItemsBar) => (
+          {menuItem.map((elem: MenuItemI) => (
             <MenuItem
               key={elem.id}
               src={elem.src}
