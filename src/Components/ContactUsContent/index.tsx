@@ -14,7 +14,7 @@ const ContactUsContent: FC = () => {
   };
 
   const onSendMessage = () => {
-    prompt(message, "confirmation of message sending?");
+    prompt(message, "confirm sending the question");
     setMessage("");
   };
 
@@ -24,7 +24,18 @@ const ContactUsContent: FC = () => {
       <div className={style.contact_us__header}>
         <h1>CONTACT US</h1>
       </div>
-      <div>
+      <div className={style.contact_us__input_btn}>
+        <input
+          type="text"
+          placeholder="Enter your question"
+          value={message}
+          onChange={onChangeMessage}
+        />
+        <button type="button" onClick={onSendMessage}>
+          Send
+        </button>
+      </div>
+      <div className={style.contact_us__logos}>
         <Image
           src={twitter}
           alt="alt logo"
@@ -44,16 +55,15 @@ const ContactUsContent: FC = () => {
           }
         />
       </div>
+
       <div>
-        <input
-          type="text"
-          placeholder="Enter your message"
-          value={message}
-          onChange={onChangeMessage}
-        />
-        <button type="button" onClick={onSendMessage}>
-          Send
-        </button>
+        <span>phone +7 999 123 66 00</span>
+        <span>
+          <a href="https://mail.ru/"> mail mail@mail.ru</a>
+        </span>
+        <span>
+          <a href="http://localhost:3000/mainPage"> www.website.com</a>
+        </span>
       </div>
 
       <PageFooter />

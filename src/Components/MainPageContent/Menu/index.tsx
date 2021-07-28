@@ -1,10 +1,16 @@
 import React, { FC } from "react";
 import MenuHeader from "./MenuHeader";
 import MenuItem from "./MenuItem";
-import { menuItem, MenuItemI } from "./MenuItem/modelItemMenu";
+import { MenuItemI } from "./MenuItem/modelItemMenu";
 import style from "../Menu/menu.module.scss";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../redux/store";
 
 const Menu: FC = () => {
+  const menuItems: MenuItemI[] = useSelector<RootState, MenuItemI[]>(
+    (state) => state.menuItems.items
+  );
+
   return (
     <>
       <div>
@@ -12,7 +18,7 @@ const Menu: FC = () => {
       </div>
       <div className={style.page_menu__wrapper}>
         <div className={style.page_menu__container}>
-          {menuItem.map((elem: MenuItemI) => (
+          {menuItems?.map((elem: MenuItemI) => (
             <MenuItem
               key={elem.id}
               src={elem.src}

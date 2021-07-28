@@ -4,12 +4,18 @@ import Image from "next/image";
 import logo from "../../../../public/logo.png";
 import { BtnHeader, buttonsHeader } from "./ButtonNavbarHeader/modelBtn";
 import ButtonNavbarHeader from "./ButtonNavbarHeader";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../redux/store";
 
 const PageHeader: FC<BtnHeader> = () => {
   const [activeId, setActiveId] = useState<string>("1");
   const clickHandle = (id: string) => {
     setActiveId(id);
   };
+
+  const isDisabled = useSelector<RootState, boolean>((state) =>
+    Boolean(state.cart.items.length)
+  );
 
   return (
     <div className={style.page_header__wrapper}>
@@ -28,7 +34,13 @@ const PageHeader: FC<BtnHeader> = () => {
           ))}
         </div>
         <div>
-          <button type="button" className={style.page_header__navigation__btn}>
+          <button
+            type="button"
+            disabled={!isDisabled}
+            className={`
+            ${style.page_header__navigation__btn}
+            ${!isDisabled ? style._disabled : ""}`}
+          >
             Booking Now
           </button>
         </div>

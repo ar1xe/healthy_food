@@ -12,3 +12,46 @@
             color: #150C01;    
         }
 }
+
+.contact_us__input_btn{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;    
+    justify-content: center;  
+    
+
+    input{
+        outline: none;
+        width: 550px;
+        height: 75px;
+        /* border: none; */
+        border-radius: 15px 0 0 15px;
+        padding-left: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        opacity: 0.5;
+
+    }
+
+    button{
+        width: 150px;
+        height: 75px;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        background: #DC780B;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+}
+
+.contact_us__logos{
+    margin-top: 70px;
+    width: 700px;
+    display: flex;  
+    justify-content: space-between;
+}

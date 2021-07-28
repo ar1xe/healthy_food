@@ -44,4 +44,12 @@ font-family: 'Philosopher', sans-serif;
     line-height: 19px;
     color: #FFFFFF;
     cursor: pointer;
+        
+        &._disabled{
+            background: #aaa6a1;
+            color: black;
+        }
 }
+
+
+   
