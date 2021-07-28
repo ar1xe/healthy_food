@@ -72,7 +72,7 @@ const AdUnit: FC = () => {
                 </div>
               )}
             </Popup>
-            <Link href="/aboutUs/foodDetails">
+            <Link href="/foodDetails">
               <a type="button" className={style.page_adunit__btns}>
                 Food Details
               </a>

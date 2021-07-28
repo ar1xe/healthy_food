@@ -1,48 +1,30 @@
 import React, { FC } from "react";
 import PageHeader from "../Common/PageHeader";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import Image from "next/image";
-import face from "../MainPageContent/Testimonial/img/face.png";
+import PageFooter from "../Common/PageFooter";
+import { ItemAbout, itemAbout } from "./ItemAboutUs/modelItemAboutUs";
+import ItemAboutUs from "./ItemAboutUs";
+import style from "../AboutUsContent/about_us.module.scss";
 
 const AboutUsContent: FC = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
   return (
     <>
       <PageHeader />
-      <Carousel responsive={responsive} draggable={false}>
-        <div>
-          <Image src={face} alt="alt face" width={500} height={500} />
+      <div className={style.about_us__header}>
+        <h1 className={style.about_us__header}>ABOUT OUR RESTAURANT</h1>
+      </div>
+      <div className={style.about_us__wrapper}>
+        <div className={style.about_us__container}>
+          {itemAbout.map((item: ItemAbout) => (
+            <ItemAboutUs
+              key={item.id}
+              src={item.src}
+              head={item.head}
+              discription={item.discription}
+            />
+          ))}
         </div>
-        <div>
-          <Image src={face} alt="alt face" width={500} height={500} />
-        </div>
-        <div>
-          <Image src={face} alt="alt face" width={500} height={500} />
-        </div>
-        <div>
-          <Image src={face} alt="alt face" width={500} height={500} />
-        </div>
-      </Carousel>
-      ;
+      </div>
+      <PageFooter />;
     </>
   );
 };

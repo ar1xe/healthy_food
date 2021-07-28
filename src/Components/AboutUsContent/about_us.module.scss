@@ -1,0 +1,31 @@
+.about_us__header{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;    
+    justify-content: center;  
+        h1{
+            font-family: 'Philosopher', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 24px;            
+            color: #150C01;    
+        }
+}
+
+.about_us__wrapper{
+    margin-top: 150px;
+    height: 900px;
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+    
+}
+
+.about_us__container{
+    width: 1287px;
+    display: flex;    
+    flex-wrap: wrap;       
+    justify-content: space-between;
+    
+}

@@ -6,7 +6,7 @@ import style from "../Menu/menu.module.scss";
 
 const Menu: FC = () => {
   return (
-    <div>
+    <>
       <div>
         <MenuHeader />
       </div>
@@ -28,7 +28,7 @@ const Menu: FC = () => {
           <button type="button">Learn More</button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

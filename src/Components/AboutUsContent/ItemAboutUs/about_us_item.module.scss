@@ -1,0 +1,51 @@
+.item_about_us__wrapper{
+    width: 400px;
+    height: 372px;    
+    display: flex;    
+    flex-direction: column;
+}
+
+.item_about_us__container{
+    width: 400px;
+    height: 372px; 
+    display: flex;       
+    justify-content: center;
+}
+
+
+.item_about_us__discription{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        h3{
+            font-family: 'Philosopher', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 24px;            
+            color: #150C01;   
+        }
+        span{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;     
+            display: flex;
+            align-items: center;
+            color: #150C01;
+            opacity: 0.7;
+            text-align: center;
+        }
+}
+
+.item_about_us__logo{
+    border-radius: 125px;
+}
+
+.item_about_us__logo:hover{
+    transform: rotate(-15deg) scale(1.2); 
+    transition-duration: 1.5s;
+}
