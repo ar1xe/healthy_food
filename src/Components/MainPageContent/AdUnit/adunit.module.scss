@@ -69,6 +69,12 @@
     color: #DC780B;
     cursor: pointer;
     background-color: #FFFFFF;
+    box-shadow: 0 5px rgb(214, 211, 211);    
+}
+
+.page_adunit__btns:active{
+    box-shadow: 0 3px #666;
+            transform: translateY(3px);
 }
 
 .modal{

@@ -32,8 +32,15 @@
             border: none;
             color: #FFFFFF;
             font-size: 24px;
-            margin: 10px 0 0 25px;            
+            margin: 10px 0 0 25px;   
+            cursor: pointer;         
+            box-shadow: 0 5px rgb(214, 211, 211)
         }
+
+        button:active {
+            box-shadow: 0 3px #666;
+            transform: translateY(3px);      
+          }
 }
 
 .menu_item__logo{

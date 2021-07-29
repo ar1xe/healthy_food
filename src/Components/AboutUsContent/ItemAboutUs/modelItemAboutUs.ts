@@ -8,19 +8,19 @@ export const itemAbout = [
         id: "1",
         src: hf1,
         head: "Modern Design",
-        discription: "Dictum imperdiet lacinia nec hac faucibus. Efficitur sit sit orci, odio. Imperdiet dapibus ultricies. Si."
+        discription: "Frequency distributions obtained from the automatic text analysis showed that hardly any of the comments made in both the‘Islamic' samplings during the two time periods and the random sampling display obvious emotional coloring"
     },
     {
         id: "2",
         src: hf2,
         head: "Fresh Vegetables",
-        discription: "Molestie quis, malesuada ex. Imperdiet hac quam, adipiscing et ornar."
+        discription: "Frequency distributions obtained from the automatic text analysis showed that hardly any of the comments made in both the‘Islamic' samplings during the two time periods and the random sampling display obvious emotional coloring"
     },
     {
         id: "3",
         src: hf3,
         head: "International Menu",
-        discription: "Venenatis velit molestie mattis justo luctus tempus sapien aenean lectus risus tempus ipsum interdum lectus dui ut."
+        discription: "Frequency distributions obtained from the automatic text analysis showed that hardly any of the comments made in both the‘Islamic' samplings during the two time periods and the random sampling display obvious emotional coloring"
     },
 ]
 
