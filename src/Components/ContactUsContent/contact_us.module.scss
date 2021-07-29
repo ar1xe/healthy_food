@@ -1,3 +1,7 @@
+.contact_us__wrapper{
+    height: 900px;
+}
+
 .contact_us__header{
     margin-top: 50px;
     width: 100%;
@@ -23,8 +27,7 @@
     input{
         outline: none;
         width: 550px;
-        height: 75px;
-        /* border: none; */
+        height: 75px;        
         border-radius: 15px 0 0 15px;
         padding-left: 50px;
         font-family: 'Roboto', sans-serif;
@@ -51,7 +54,41 @@
 
 .contact_us__logos{
     margin-top: 70px;
-    width: 700px;
+    width: 500px;
     display: flex;  
     justify-content: space-between;
+}
+
+.contact_us_logos__wrapper{
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+}
+
+.contact_us_contact__wrapper{
+    width: 100%;
+    display: flex;    
+    justify-content: center; 
+}
+
+
+.contact_us_contact{
+    width: 700px;
+    margin-top: 75px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    span{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.5;        
+    }
+
+    span:hover{
+        text-decoration: underline;
+    }
 }
