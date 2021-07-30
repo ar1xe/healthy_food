@@ -46,7 +46,7 @@ const FoodDetails: FC = () => {
         </div>
       </div>
       <div className={style.food_details__totalprice}>
-        <span>Total price{totalPrice}$</span>
+        <span>Total price {totalPrice} $</span>
       </div>
       <PageFooter />
     </>
