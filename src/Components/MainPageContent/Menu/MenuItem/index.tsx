@@ -32,7 +32,7 @@ const MenuItem: FC<MenuItemI> = ({ id, src, title, price, description }) => {
         </div>
         <div className={style.menu_item__description}>
           <h3>{title}</h3>
-          <span>{price}</span>
+          <span>{price}$</span>
         </div>
         <div>
           <p>{description}</p>

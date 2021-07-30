@@ -36,3 +36,19 @@
     justify-content: space-between;
    
 }
+
+.food_details__totalprice{
+    margin: 50px 0 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;      
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #DC780B;
+    opacity: 0.7;
+}

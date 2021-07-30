@@ -20,7 +20,9 @@ const FoodDetails: FC = () => {
       </div>
     );
   }
-
+  const totalPrice = cartItems.reduce((sum, currentItem) => {
+    return sum + currentItem.count * currentItem.item.price;
+  }, 0);
   return (
     <>
       <PageHeader />
@@ -42,6 +44,9 @@ const FoodDetails: FC = () => {
             );
           })}
         </div>
+      </div>
+      <div className={style.food_details__totalprice}>
+        <span>Total price{totalPrice}$</span>
       </div>
       <PageFooter />
     </>

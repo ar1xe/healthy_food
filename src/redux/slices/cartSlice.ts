@@ -20,13 +20,14 @@ const cartSlice = createSlice({
                     items: state.items.map(item => {
                         if(item.item.id === action.payload.id){
                             return { 
+                                // ...state.items[action.payload.id],
                                 item: action.payload, 
                                 count: currentItem.count + 1
                             }
                         }
                         return item;
                     }) 
-                }                             
+                }    
             } else {
                  state.items.push({
                     item: action.payload,
@@ -41,7 +42,6 @@ const cartSlice = createSlice({
                     return {
                         items: state.items.filter(item => item.item.id !== action.payload.id)
                     }
-                    
                 } if(currentItem.count > 1) {
                     return {
                         items: state.items.map(item => {

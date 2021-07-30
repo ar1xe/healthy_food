@@ -57,4 +57,25 @@ font-family: 'Philosopher', sans-serif;
     transform: translateY(3px);
 }
 
+.page_header__booking{
+    width: 155px;
+    height: 46px;
+    background: #DC780B;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 5px rgb(214, 211, 211);
+        
+        &._disabled{
+            background: #aaa6a1;
+            color: black;
+        }
+    
+}
    

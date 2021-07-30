@@ -41,7 +41,7 @@ const PageHeader: FC<BtnHeader> = () => {
             ${style.page_header__navigation__btn}
             ${!isDisabled ? style._disabled : ""}`}
           >
-            Booking Now
+            Order Status
           </button>
         </div>
       </div>
