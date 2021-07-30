@@ -1,31 +1,10 @@
 import {createSlice, PayloadAction } from "@reduxjs/toolkit"
 import type { RootState } from "./store"
 
-interface ContactState {
-    value: string
-}
-
-const initlState: ContactState = {
-    value: "",
-} 
-
-/* export const contsctSlice = createSlice({
-    name: 'contact',
-    initlState: {
-        message: string,
-    }
-    reducers: {
-        onSendMessage: (state) => {
-            prompt(state, "confirmation of message sending?");
-    setMessage(value)
-        },
-        
-    },
-    
-}) */
 
 
-/* // Define a type for the slice state
+
+// Define a type for the slice state
 interface CounterState {
     value: number
   }
@@ -58,4 +37,4 @@ interface CounterState {
   // Other code such as selectors can use the imported `RootState` type
   export const selectCount = (state: RootState) => state.counter.value
   
-  export default counterSlice.reducer */
+  export default counterSlice.reducer

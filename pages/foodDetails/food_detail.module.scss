@@ -1,0 +1,38 @@
+.food_details_cart_empty__wrapper{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+}
+
+.food_details_cart_empty__container{
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-family: 'Philosopher', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 24px;
+        padding-bottom: 200px;
+        margin: 0%;
+    }
+}
+
+.food_details__wrapper{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+}
+.food_details__container{
+    width: 1287px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}

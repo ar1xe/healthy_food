@@ -2,12 +2,14 @@ import { configureStore, createReducer } from '@reduxjs/toolkit'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import menuReducer from "./slices/menuItemSlice"
 import cartReducer from "./slices/cartSlice"
+import { enableMapSet } from 'immer';
+
+enableMapSet();
 
 export const store = configureStore({
   reducer: {
     menuItems: menuReducer,
     cart: cartReducer,
-    
   }, 
 })
 

@@ -21,6 +21,7 @@ const Menu: FC = () => {
           {menuItems?.map((elem: MenuItemI) => (
             <MenuItem
               key={elem.id}
+              id={elem.id}
               src={elem.src}
               title={elem.title}
               price={elem.price}

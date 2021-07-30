@@ -7,42 +7,42 @@ import steak from "../MenuItem/img/steak.png"
 
 export const menuItem = [
     {
-        id: "1",
+        id: "Vegie_Muffen",
         src: muff,
         title: "Vegie Muffen",
         price: "16$",
         description: "There are many things are needed to start the Fast Food Business.",
     },
     {
-        id: "2",
+        id: "Salads",
         src: salad,
         title: "Salads",
         price: "12$",
         description: "There are many things are needed to start the Fast Food Business.",
     },
     {
-        id: "3",
+        id: "Burger",
         src: burg,
         title: "Burger",
         price: "10$",
         description: "There are many things are needed to start the Fast Food Business.",
     },
     {
-        id: "4",
+        id: "Delmonico_Steak_dish",
         src: steak,
         title: "Delmonico Steak dish",
         price: "14$",
         description: "There are many things are needed to start the Fast Food Business.",
     },
     {
-        id: "5",
+        id: "Egg_Masala",
         src: egg,
         title: "Egg Masala",
         price: "9$",
         description: "There are many things are needed to start the Fast Food Business.",
     },
     {
-        id: "6",
+        id: "Peach_Melba_dish",
         src: peach,
         title: "Peach Melba dish",
         price: "15$",
