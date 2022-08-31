@@ -2,6 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 <img alt="amplication-logo" src="./styles/common/hf0.png">
 
+## Technology stack
+- typeScript
+- React
+- Next.js
+- Redux Toolkit
+- SCSS
+
 
 ## Getting Started
 
